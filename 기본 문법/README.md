@@ -380,4 +380,16 @@ const f3: sum = (x, y) => x + y;
 
 ## [keyof](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html)
 
+```ts
+type Point = { x: number; y: string };
+type P = keyof Point;
+```
+
+keyof 연산자는 객체의 키값에 대한 타입을 참조할 수 있는 연산자이다.  
+위 예제의 경우에는 Point의 키 타입은 number|string이다.
+
+따라서 keyof Point의 타입은 number|string이다.
+
 ## as (type assertion)
+
+개발자가 지정하는 타입으로 단언한다.
